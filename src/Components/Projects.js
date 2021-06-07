@@ -2,8 +2,10 @@ import React from 'react'
 
 const Projects = () => {
     return (
-        <div>
-            {/* project title with centered container */}
+        <section className='Projects'>
+            <div className="title-container">
+                <h2 className="title">Projects</h2>
+            </div>
             {/* background detail svg's */}
             {/* container for mobile */}
             {/* container for web */}
@@ -15,7 +17,7 @@ const Projects = () => {
             {/* code svg with nested Code in it */}
             {/* repeat for all projects */}
 
-        </div>
+        </section>
     )
 }
 
