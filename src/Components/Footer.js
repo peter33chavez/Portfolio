@@ -1,13 +1,23 @@
 import React from 'react'
+import Connect from './Connect.js';
+import FooterDetail from '../Images/FooterDetail.svg';
 
 const Footer = () => {
     return (
-        <div>
-            {/* background container */}
-            {/* background details */}
-            {/* centered nav items */}
-            {/* attach Connect btn to a hovering box Component */}
-        </div>
+        <footer>
+             <ul className="nav-container">
+                <li className="nav-item">
+                    <a href="#projects" className="projects-link">Projects</a>
+                </li>
+                <li className="nav-item">
+                    <a href="#about" className="about-link">About</a>
+                </li>
+                <li className="nav-item">
+                    <a href={Connect} className="connect-link">Connect</a>
+                </li>
+            </ul>
+            <img src={ FooterDetail }/>
+        </footer>
     )
 }
 
