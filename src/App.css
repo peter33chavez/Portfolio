@@ -1,1 +1,45 @@
+*{
+    font-family: antonio;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: #DFE0DF;
+    overflow-x: hidden;
+
+
+}
 /* NavBar */
+nav{
+    background: #E28340;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-container{
+    display: flex;
+}
+
+.nav-item {
+    padding: 2em;
+    display: pointer;
+    font-size: 14px;
+}
+.nav-item :hover{
+    color:#cecece;
+}
+.social-container{
+    display: flex;
+}
+.social-link a{
+    cursor: pointer;
+}
+.social-link a img{
+    padding: .3em;
+    width: 18px;
+}
+
+/* Header */
+
+
