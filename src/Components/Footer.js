@@ -16,7 +16,7 @@ const Footer = () => {
                     <a href={Connect} className="connect-link">Connect</a>
                 </li>
             </ul>
-            <img src={ FooterDetail }/>
+            <img src={ FooterDetail } alt=''/>
         </footer>
     )
 }

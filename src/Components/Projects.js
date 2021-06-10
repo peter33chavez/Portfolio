@@ -11,6 +11,37 @@ import BackgroundDetail1 from '../Images/ProjectDetail1.svg';
 import BackgroundDetail2 from '../Images/ProjectDetail2.svg';
 import BackgroundDetail3 from '../Images/ProjectDetail3.svg';
 
+
+const projects = [
+    {
+        id: 1,
+        title: 'Auction Commerce',
+        stacks: 'Django,SQLite, HTML, CSS',
+        site: 'Null',
+        code: 'https://github.com/peter33chavez/commerce-Project2',
+        Web: BidWeb,
+        Mobile: BidMobile,
+    },
+    {
+        id: 2,
+        title: 'JavaScript Email',
+        stacks: 'JavaScript, Django,SQLite, HTML, CSS',
+        site: 'Null',
+        code: 'https://github.com/peter33chavez/mail-project3',
+        web: EmailWeb,
+        mobile: EmailMobile,
+    },
+    {
+        id: 3,
+        title: 'Google Search',
+        stacks: 'HTML, Sass, CSS,',
+        site: 'https://peter33chavez.github.io/search-project0/',
+        code: 'https://github.com/peter33chavez/search-project0',
+        web: GoogleWeb,
+        mobile: GoogleMobile,
+    },
+]
+
 const Projects = () => {
     return (
         <section className='Projects'>
@@ -18,94 +49,40 @@ const Projects = () => {
                 <h2 className="title">Projects</h2>
             </div>
 
-            {/* Project 1 */}
-            <div className="project-container">
+            {projects.map((project) => (
+            <div key={project.id} className="project-container">
                 <div className="mobile-card">
-                    <img src={ BidMobile } alt="Bid Project Mobile" />
+                    <img src={ project.mobile } alt="" />
                 </div>
                 <div className="web-card">
-                    <img src={ BidWeb } alt="Bid Project Web" />
+                    <img src={ project.web } alt="" />
                 </div>
                 <div className="cta-card">
                     <div className="project-detail-container">
-                        <h2 className="project-title">Auction Commerce</h2>
+                        <h2 className="project-title">{project.title}</h2>
                         <hr></hr>
-                        <p>Django, SQLite, HTML, CSS</p>
+                        <p>{project.stacks}</p>
                     </div>
                     <div className="project-links-container">
                         <div className="link-container">
-                            <img src={ComputerIcon} alt="Project Website" />
+                            <a href="#"><img src={ComputerIcon} alt="Project Website" />
                             <p>Site</p>
+                            </a>
                         </div>
                         <div className="vl"></div>
                         <div className="link-container">
-                            <img src={CodeIcon} alt="Code for Website" />
-                            <p>Code</p>
+                            <a href={project.code}>
+                                <img src={CodeIcon} alt="Code for Website" />
+                                <p>Code</p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <img src={BackgroundDetail2} />
-            <img src={BackgroundDetail1} />
-
-            {/* Project 2 */}
-            <div className="project-container">
-                <div className="mobile-card">
-                    <img src={ EmailMobile } alt="Bid Project Mobile" />
-                </div>
-                <div className="web-card">
-                    <img src={ EmailWeb } alt="Bid Project Web" />
-                </div>
-                <div className="cta-card">
-                    <div className="project-detail-container">
-                        <h2 className="project-title">JavaScript Email</h2>
-                        <hr></hr>
-                        <p>JavaScript, Django, SQLite, HTML, CSS</p>
-                    </div>
-                    <div className="project-links-container">
-                        <div className="link-container">
-                            <img src={ComputerIcon} alt="Project Website" />
-                            <p>Site</p>
-                        </div>
-                        <div className="vl"></div>
-                        <div className="link-container">
-                            <img src={CodeIcon} alt="Code for Website" />
-                            <p>Code</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-            <img src={BackgroundDetail3} />
-
-            {/* Project 3 */}
-            <div className="project-container">
-                <div className="mobile-card">
-                    <img src={ GoogleMobile } alt="Bid Project Mobile" />
-                </div>
-                <div className="web-card">
-                    <img src={ GoogleWeb } alt="Bid Project Web" />
-                </div>
-                <div className="cta-card">
-                    <div className="project-detail-container">
-                        <h2 className="project-title">Google Search</h2>
-                        <hr></hr>
-                        <p>HTML, Sass, CSS</p>
-                    </div>
-                    <div className="project-links-container">
-                        <div className="link-container">
-                            <img src={ComputerIcon} alt="Project Website" />
-                            <p>Site</p>
-                        </div>
-                        <div className="vl"></div>
-                        <div className="link-container">
-                            <img src={CodeIcon} alt="Code for Website" />
-                            <p>Code</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            ))}
+            <img src={BackgroundDetail2} alt=''/>
+            <img src={BackgroundDetail1} alt=''/>
+            <img src={BackgroundDetail3} alt=''/>
         </section>
     )
 }
