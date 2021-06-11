@@ -10,6 +10,9 @@ function App() {
     <div className='body'>
       <NavBar />
       <Header />
+      <div className="title-container">
+        <h2 className="title">Projects</h2>
+      </div>
       <Projects />
       <Languages />
       <Footer />

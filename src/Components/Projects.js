@@ -19,8 +19,8 @@ const projects = [
         stacks: 'Django,SQLite, HTML, CSS',
         site: 'Null',
         code: 'https://github.com/peter33chavez/commerce-Project2',
-        Web: BidWeb,
-        Mobile: BidMobile,
+        web: BidWeb,
+        mobile: BidMobile,
     },
     {
         id: 2,
@@ -44,23 +44,15 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section className='Projects'>
-            <div className="title-container">
-                <h2 className="title">Projects</h2>
-            </div>
-
+        <section className='projects'>
             {projects.map((project) => (
             <div key={project.id} className="project-container">
-                <div className="mobile-card">
-                    <img src={ project.mobile } alt="" />
-                </div>
-                <div className="web-card">
-                    <img src={ project.web } alt="" />
-                </div>
+                <img className="mobile-card" src={ project.mobile } alt="" />
+                <img className="web-card" src={ project.web } alt="" />
                 <div className="cta-card">
                     <div className="project-detail-container">
                         <h2 className="project-title">{project.title}</h2>
-                        <hr></hr>
+                        
                         <p>{project.stacks}</p>
                     </div>
                     <div className="project-links-container">

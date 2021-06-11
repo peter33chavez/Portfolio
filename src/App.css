@@ -4,10 +4,11 @@
     padding: 0;
     text-decoration: none;
     list-style-type: none;
-    color: #DFE0DF;
     overflow-x: hidden;
 
-
+}
+body{
+    background: #DFE0DF;
 }
 /* NavBar */
 nav{
@@ -25,9 +26,13 @@ nav{
     padding: 2em;
     display: pointer;
     font-size: 14px;
+    color: #DFE0DF;
 }
 .nav-item :hover{
     color:#cecece;
+}
+.nav-item :visited{
+    color:#DFE0DF;
 }
 .social-container{
     display: flex;
@@ -52,6 +57,7 @@ header{
     display:flex;
     flex-direction: column;
     justify-content: center;
+    color: #DFE0DF;
 }
 
 .quote-container{
@@ -71,6 +77,7 @@ header{
 
 .resume-btn{
     background: #2B2B2B;
+    color: #DFE0DF;
     margin-top: 2em;
     padding: 5px 20px;
     border: 0;
@@ -78,11 +85,66 @@ header{
     font-size: 12px;
     font-weight: 100;
     cursor: pointer;
-    /* vertical-align: center; */
 }
 .resume-btn:hover{
     background: #000000;
 }
+
+/* Projects */
+.projects{
+    background: #DFE0DF;
+    
+}
+
+.title-container{
+    margin: 0 auto;
+    width: 70%;
+    position: relative;
+    top: -50px;
+    padding: 30px;
+    background:#DFE0DF;
+
+}
+.title{
+    text-align: center;
+    color:#E28340;
+    font-weight: 600;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+.project-container{
+    margin: 0 110px;
+    display: flex;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+}
+.web-card{
+    width: 500px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, .5);
+}
+
+.mobile-card{
+    width: 180px;
+    z-index: 5;
+    position: relative;
+    top: 60px;
+    left: 90px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, .5);
+}
+
+.cta-card{
+    background: #DFE0DF;
+    z-index: 5;
+    position: relative;
+    top: 80px;
+    left: -120px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
