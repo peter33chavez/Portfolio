@@ -93,7 +93,7 @@ header{
 /* Projects */
 .projects{
     background: #DFE0DF;
-    
+
 }
 
 .title-container{
@@ -103,6 +103,7 @@ header{
     top: -50px;
     padding: 30px;
     background:#DFE0DF;
+    letter-spacing: 1px;
 
 }
 .title{
@@ -117,15 +118,15 @@ header{
     display: flex;
     margin-bottom: 100px;
     padding-left: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
 }
 .web-card{
-    width: 500px;
+    width: 600px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, .5);
 }
 
 .mobile-card{
-    width: 180px;
+    width: 250px;
     z-index: 5;
     position: relative;
     top: 60px;
@@ -137,14 +138,77 @@ header{
     background: #DFE0DF;
     z-index: 5;
     position: relative;
-    top: 80px;
-    left: -120px;
+    top: 130px;
+    left: -150px;
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 20px 70px 0px 40px;
+
 }
 
+@media screen and (min-width: 1280px){
+
+    .cta-details{
+        position: relative;
+        top: 20px;
+    }
+}
+@media screen and (min-width: 1400px){
+
+    .cta-details{
+        position: relative;
+        top: 50px;
+    }
+}
+.project-detail-container h2{
+    text-align: center;
+    color: #E28340;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: .5px;
+}
+.project-detail-container hr{
+    height: 1px;
+    width: 150px;
+    background-color: #E28340;
+    border: none;
+    margin: auto;
+
+
+}
+.project-detail-container p{
+    font-weight: 100;
+    text-align: center;
+    color: #2B2B2B;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.project-links-container{
+    display:flex;
+}
+
+.link-container{
+    margin: 30px;
+}
+
+.link-container a img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 3px;
+}
+.link-container p{
+    text-align: center;
+}
+
+.vl{
+    border-left: 3px solid #2B2B2B;
+    height: 90px;
+    position: relative;
+    top: 15px;
+
+}
 
 
 

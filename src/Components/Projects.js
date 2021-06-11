@@ -16,7 +16,7 @@ const projects = [
     {
         id: 1,
         title: 'Auction Commerce',
-        stacks: 'Django,SQLite, HTML, CSS',
+        stacks: 'Django, SQLite, HTML, CSS',
         site: 'Null',
         code: 'https://github.com/peter33chavez/commerce-Project2',
         web: BidWeb,
@@ -25,7 +25,7 @@ const projects = [
     {
         id: 2,
         title: 'JavaScript Email',
-        stacks: 'JavaScript, Django,SQLite, HTML, CSS',
+        stacks: 'JavaScript, Django, SQLite, HTML, CSS',
         site: 'Null',
         code: 'https://github.com/peter33chavez/mail-project3',
         web: EmailWeb,
@@ -50,23 +50,25 @@ const Projects = () => {
                 <img className="mobile-card" src={ project.mobile } alt="" />
                 <img className="web-card" src={ project.web } alt="" />
                 <div className="cta-card">
-                    <div className="project-detail-container">
-                        <h2 className="project-title">{project.title}</h2>
-                        
-                        <p>{project.stacks}</p>
-                    </div>
-                    <div className="project-links-container">
-                        <div className="link-container">
-                            <a href="#"><img src={ComputerIcon} alt="Project Website" />
-                            <p>Site</p>
-                            </a>
+                    <div className="cta-details">
+                        <div className="project-detail-container">
+                            <h2 className="project-title">{project.title}</h2>
+                            <hr />
+                            <p>{project.stacks}</p>
                         </div>
-                        <div className="vl"></div>
-                        <div className="link-container">
-                            <a href={project.code}>
-                                <img src={CodeIcon} alt="Code for Website" />
-                                <p>Code</p>
-                            </a>
+                        <div className="project-links-container">
+                            <div className="link-container">
+                                <a href="#"><img src={ComputerIcon} alt="Project Website" />
+                                <p>Site</p>
+                                </a>
+                            </div>
+                            <div className="vl"></div>
+                            <div className="link-container">
+                                <a href={project.code}>
+                                    <img src={CodeIcon} alt="Code for Website" />
+                                    <p>Code</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
