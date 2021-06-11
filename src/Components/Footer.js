@@ -1,6 +1,5 @@
 import React from 'react'
 import Connect from './Connect.js';
-import FooterDetail from '../Images/FooterDetail.svg';
 
 const Footer = () => {
     return (
@@ -16,7 +15,6 @@ const Footer = () => {
                     <a href={Connect} className="connect-link">Connect</a>
                 </li>
             </ul>
-            <img src={ FooterDetail } alt=''/>
         </footer>
     )
 }

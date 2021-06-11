@@ -28,11 +28,11 @@ nav{
     font-size: 14px;
     color: #DFE0DF;
 }
-.nav-item :hover{
-    color:#cecece;
-}
 .nav-item :visited{
     color:#DFE0DF;
+}
+.nav-item :hover{
+    color:#cecece;
 }
 .social-container{
     display: flex;
@@ -63,7 +63,7 @@ header{
 .quote-container{
     width: 40vw;
     margin: 0 160px;
-}
+}   
 
 .quote{
     font-weight: 300;
@@ -207,9 +207,25 @@ header{
     height: 90px;
     position: relative;
     top: 15px;
-
 }
+/* Tools */
 
+
+
+/* Footer */
+footer{
+    display: flex;
+    background: #E28340;
+    background-image: url('./Images/FooterDetail.svg');
+    background-size: 1300px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-position: right;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-container{
+}
 
 
 
