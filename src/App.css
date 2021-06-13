@@ -63,7 +63,7 @@ header{
 .quote-container{
     width: 40vw;
     margin: 0 160px;
-}   
+}
 
 .quote{
     font-weight: 300;
@@ -91,10 +91,6 @@ header{
 }
 
 /* Projects */
-.projects{
-    background: #DFE0DF;
-
-}
 
 .title-container{
     margin: 0 auto;
@@ -109,42 +105,56 @@ header{
 .title{
     text-align: center;
     color:#E28340;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 40px;
     margin-block-end: 0;
     margin-block-start: 0;
 }
-.project-container{
-    margin: 0 110px;
+
+.projects{
+    background: #DFE0DF;
     display: flex;
-    margin-bottom: 100px;
-    padding-left: 20px;
-    padding-bottom: 130px;
-}
-.web-card{
-    width: 600px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, .5);
+    flex-direction: column;
+    background-image: url('./Images/ProjectDetail1.svg'), url('./Images/ProjectDetail2.svg'), url('./Images/ProjectDetail3.svg');
+    background-size: 120px, 900px, 500px;
+    background-position:right top, left 1180px, right bottom 100px ;
+    background-repeat: no-repeat;
 }
 
+.project-container{
+    display: flex;
+    /* margin: 100px auto; */
+    overflow: hidden;
+    
+}
+
+.web.card.container{
+    max-width: 200px;
+    
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .4);
+}
+.web-card{
+    width: 100%;
+    
+}
+.mobile.card.container{
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .4);
+}
 .mobile-card{
-    width: 250px;
-    z-index: 5;
-    position: relative;
-    top: 60px;
-    left: 90px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, .5);
+    width: 100%;
 }
 
 .cta-card{
     background: #DFE0DF;
-    z-index: 5;
+    z-index: 2;
+    width: 500px;
+    height: 500px;
     position: relative;
     top: 130px;
     left: -150px;
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 70px 0px 40px;
-
 }
 
 @media screen and (min-width: 1280px){
@@ -162,8 +172,8 @@ header{
     }
 }
 .project-detail-container h2{
-    text-align: center;
     color: #E28340;
+    text-align: center;
     font-weight: 600;
     font-size: 20px;
     letter-spacing: .5px;
@@ -174,15 +184,13 @@ header{
     background-color: #E28340;
     border: none;
     margin: auto;
-
-
 }
 .project-detail-container p{
     font-weight: 100;
-    text-align: center;
     color: #2B2B2B;
     font-size: 12px;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .project-links-container{
@@ -192,14 +200,14 @@ header{
 .link-container{
     margin: 30px;
 }
+.link-container p{
+    text-align: center;
+}
 
 .link-container a img{
     width: 50px;
     height: 50px;
     margin-bottom: 3px;
-}
-.link-container p{
-    text-align: center;
 }
 
 .vl{
@@ -209,7 +217,9 @@ header{
     top: 15px;
 }
 /* Tools */
-
+.tools-container{
+    background: #E28340;
+}
 
 
 /* Footer */
@@ -224,8 +234,7 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
-.nav-container{
-}
+
 
 
 

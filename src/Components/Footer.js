@@ -1,5 +1,5 @@
 import React from 'react'
-import Connect from './Connect.js';
+import ConnectForm from './ConnectForm.js';
 
 const Footer = () => {
     return (
@@ -12,7 +12,7 @@ const Footer = () => {
                     <a href="#about" className="about-link">About</a>
                 </li>
                 <li className="nav-item">
-                    <a href={Connect} className="connect-link">Connect</a>
+                    <a href={ConnectForm} className="connect-link">Connect</a>
                 </li>
             </ul>
         </footer>

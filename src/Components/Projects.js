@@ -7,10 +7,6 @@ import GoogleMobile from '../Images/Projects-Google-Mobile.png';
 import GoogleWeb from '../Images/Projects-Google-Web.png';
 import ComputerIcon from '../Images/Icon-computer.svg';
 import CodeIcon from '../Images/Icon-code.svg';
-import BackgroundDetail1 from '../Images/ProjectDetail1.svg';
-import BackgroundDetail2 from '../Images/ProjectDetail2.svg';
-import BackgroundDetail3 from '../Images/ProjectDetail3.svg';
-
 
 const projects = [
     {
@@ -47,8 +43,12 @@ const Projects = () => {
         <section className='projects'>
             {projects.map((project) => (
             <div key={project.id} className="project-container">
-                <img className="mobile-card" src={ project.mobile } alt="" />
-                <img className="web-card" src={ project.web } alt="" />
+                <div className="mobile-card-container">
+                    <img className="mobile-card" src={ project.mobile } alt="" />
+                </div>
+                <div className="web-card-container">
+                    <img className="web-card" src={ project.web } alt="" />
+                </div>
                 <div className="cta-card">
                     <div className="cta-details">
                         <div className="project-detail-container">
@@ -74,9 +74,6 @@ const Projects = () => {
                 </div>
             </div>
             ))}
-            <img src={BackgroundDetail2} alt=''/>
-            <img src={BackgroundDetail1} alt=''/>
-            <img src={BackgroundDetail3} alt=''/>
         </section>
     )
 }

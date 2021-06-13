@@ -2,7 +2,7 @@ import './App.css';
 import NavBar from './Components/NavBar.js';
 import Header from './Components/Header.js';
 import Projects from './Components/Projects.js';
-import Languages from './Components/Languages.js';
+import Tools from './Components/Tools.js';
 import Footer from './Components/Footer.js';
 
 function App() {
@@ -14,7 +14,10 @@ function App() {
         <h2 className="title">Projects</h2>
       </div>
       <Projects />
-      <Languages />
+      <div className="title-container">
+        <h2 className="title">Tools</h2>
+      </div>
+      <Tools />
       <Footer />
     </div>
   );
