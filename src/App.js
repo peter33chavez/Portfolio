@@ -10,11 +10,11 @@ function App() {
     <div className='body'>
       <NavBar />
       <Header />
-      <div className="title-container">
+      <div className="projects-title-container">
         <h2 className="title">Projects</h2>
       </div>
       <Projects />
-      <div className="title-container">
+      <div className="tools-title-container">
         <h2 className="title">Tools</h2>
       </div>
       <Tools />

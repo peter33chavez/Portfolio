@@ -5,10 +5,12 @@
     text-decoration: none;
     list-style-type: none;
     overflow-x: hidden;
+    box-sizing: border-box;
 
 }
 body{
     background: #DFE0DF;
+
 }
 /* NavBar */
 nav{
@@ -42,7 +44,7 @@ nav{
 }
 .social-link a img{
     padding: .3em;
-    width: 18px;
+    width: 25px;
 }
 
 /* Header */
@@ -92,7 +94,7 @@ header{
 
 /* Projects */
 
-.title-container{
+.projects-title-container{
     margin: 0 auto;
     width: 70%;
     position: relative;
@@ -113,8 +115,8 @@ header{
 
 .projects{
     background: #DFE0DF;
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh;
+    width:100%;
     background-image: url('./Images/ProjectDetail1.svg'), url('./Images/ProjectDetail2.svg'), url('./Images/ProjectDetail3.svg');
     background-size: 120px, 900px, 500px;
     background-position:right top, left 1180px, right bottom 100px ;
@@ -122,55 +124,51 @@ header{
 }
 
 .project-container{
-    display: flex;
-    /* margin: 100px auto; */
-    overflow: hidden;
-    
-}
+   width:80%;
+   max-width: 2000px;
+   margin: 0 auto;
+   display: flex;
 
-.web.card.container{
-    max-width: 200px;
-    
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, .4);
+
+
 }
-.web-card{
-    width: 100%;
+.project-images-container{
+    display: flex;
+    margin-bottom: 100px;
     
-}
-.mobile.card.container{
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, .4);
 }
 .mobile-card{
+    width: 150px;
+    height: 300px;
+    
+    z-index: 3;
+    position: relative;
+    top: 220px;
+    left: 130px;
+
+
+
+}
+.mobile-card img{
     width: 100%;
+}
+.web-card{
+    width: auto;
+    max-width: 700px;
+
+}
+.web-card img{
+    width:100%;
 }
 
 .cta-card{
     background: #DFE0DF;
-    z-index: 2;
-    width: 500px;
-    height: 500px;
-    position: relative;
-    top: 130px;
-    left: -150px;
     display:flex;
+    width: 300px;
     flex-direction: column;
     align-items: center;
 }
 
-@media screen and (min-width: 1280px){
-
-    .cta-details{
-        position: relative;
-        top: 20px;
-    }
-}
-@media screen and (min-width: 1400px){
-
-    .cta-details{
-        position: relative;
-        top: 50px;
-    }
-}
 .project-detail-container h2{
     color: #E28340;
     text-align: center;
@@ -217,6 +215,15 @@ header{
     top: 15px;
 }
 /* Tools */
+.tools-title-container{
+    margin: 0 auto;
+    width: 70%;
+    position: relative;
+    top: 50px;
+    padding: 30px;
+    background:#DFE0DF;
+    letter-spacing: 1px;
+}
 .tools-container{
     background: #E28340;
 }
