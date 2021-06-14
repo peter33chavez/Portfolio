@@ -105,8 +105,14 @@ header{
 
 }
 .title{
+    background-image: linear-gradient(to right top, #E28340, #e9bba8);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
     text-align: center;
-    color:#E28340;
+
     font-weight: 700;
     font-size: 40px;
     margin-block-end: 0;
@@ -128,36 +134,19 @@ header{
    max-width: 2000px;
    margin: 0 auto;
    display: flex;
-
-
-
 }
+
 .project-images-container{
     display: flex;
     margin-bottom: 100px;
-    
 }
-.mobile-card{
-    width: 150px;
-    height: 300px;
-    
-    z-index: 3;
-    position: relative;
-    top: 220px;
-    left: 130px;
 
-
-
-}
-.mobile-card img{
-    width: 100%;
-}
-.web-card{
+.mockup-card{
     width: auto;
     max-width: 700px;
+} 
 
-}
-.web-card img{
+.mockup-card img{
     width:100%;
 }
 

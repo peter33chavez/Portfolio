@@ -1,13 +1,9 @@
 import React from 'react'
-import ComputerIcon from '../Images/Icon-computer.svg';
-import CodeIcon from '../Images/Icon-code.svg';
-
-import BidMobile from '../Images/Projects-Bid-Mobile.png';
-import BidWeb from '../Images/Projects-Bid-Web.png';
-import EmailMobile from '../Images/Projects-Email-Mobile.png';
-import EmailWeb from '../Images/Projects-Email-Web.png';
-import GoogleMobile from '../Images/Projects-Google-Mobile.png';
-import GoogleWeb from '../Images/Projects-Google-Web.png';
+import ComputerIcon from '../Images/Icon-computer.svg'
+import CodeIcon from '../Images/Icon-code.svg'
+import BidMock from '../Images/Main3.png'
+import EmailMock from '../Images/Email.png'
+import GoogleMock from '../Images/GoogleMock3.png'
 
 
 const projects = [
@@ -18,8 +14,7 @@ const projects = [
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta porro saepe cum. Cumque sunt delectus odio dolorem blanditiis vitae consequuntur.',
         site: 'Null',
         code: 'https://github.com/peter33chavez/commerce-Project2',
-        mobile: BidMobile,
-        web: BidWeb
+        mockup: BidMock
 
     },
     {
@@ -29,8 +24,7 @@ const projects = [
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta porro saepe cum. Cumque sunt delectus odio dolorem blanditiis vitae consequuntur.',
         site: 'Null',
         code: 'https://github.com/peter33chavez/mail-project3',
-        mobile: EmailMobile,
-        web: EmailWeb
+        mockup: EmailMock
     },
     {
         id: 3,
@@ -39,8 +33,7 @@ const projects = [
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta porro saepe cum. Cumque sunt delectus odio dolorem blanditiis vitae consequuntur.',
         site: 'https://peter33chavez.github.io/search-project0/',
         code: 'https://github.com/peter33chavez/search-project0',
-        mobile: GoogleMobile,
-        web: GoogleWeb
+        web: GoogleMock
     },
 ]
 
@@ -50,11 +43,8 @@ const Projects = () => {
             {projects.map((project) => (
             <div key={project.id} className={`project-container project-${project.id}`}>
                 <div className="project-images-container">
-                    <div className="mobile-card">
-                        <img src={project.mobile} alt="mobile screenshot" />
-                    </div>
-                    <div className="web-card">
-                        <img src={project.web} alt="Web screenshot" />
+                    <div className="mockup-card">
+                        <img src={project.mockup} alt="Project Mockup" />
                     </div>
                 </div>
                 <div className="cta-card">
