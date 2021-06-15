@@ -1,22 +1,19 @@
-import './App.css';
-import NavBar from './Components/NavBar.js';
-import Header from './Components/Header.js';
-import Projects from './Components/Projects.js';
-import Tools from './Components/Tools.js';
-import Footer from './Components/Footer.js';
+import './App.css'
+import NavBar from './Components/NavBar.js'
+import Header from './Components/Header.js'
+import Projects from './Components/Projects.js'
+import Tools from './Components/Tools.js'
+import Footer from './Components/Footer.js'
+import Titles from './Components/Titles.js'
 
 function App() {
   return (
     <div className='body'>
       <NavBar />
       <Header />
-      <div className="projects-title-container">
-        <h2 className="title">Projects</h2>
-      </div>
+      <Titles container='projects-title-container' title='Projects'/>
       <Projects />
-      <div className="tools-title-container">
-        <h2 className="title">Tools</h2>
-      </div>
+      <Titles container='tools-title-container' title='Tools' />
       <Tools />
       <Footer />
     </div>

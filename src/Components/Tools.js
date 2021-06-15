@@ -32,6 +32,8 @@ const ToolIcons = [
         title: 'Django',
     }
 ]
+
+const cards = document.querySelectorAll('.tool-item')
 const Tools = () => {
     return (
         <section className='tools-container'>

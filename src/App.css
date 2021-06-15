@@ -329,14 +329,15 @@ header{
 
 .tool-item{
     height: 300px;
-    width: 13%;
-    margin: 0 20px;
+    width: 16%;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #DFE0DF;
-    border-radius: 6px;
+    border-radius: 50px;
+    transition: width 0.7s ease-in;
 }
 
 .tool-item img{
@@ -347,7 +348,17 @@ header{
 .tool-item h4{
     margin-top: 30px;
     text-transform: uppercase;
+    opacity: 0;
 }
+
+.tool-item.active{
+    width: 30%;
+}
+.tool-item.active h3{
+    opacity: 1;
+}
+
+
 
 /* Footer */
 footer{
