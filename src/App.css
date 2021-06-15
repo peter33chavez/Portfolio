@@ -143,9 +143,6 @@ header{
    margin-bottom: 100px;
 }
 
-.project-images-container{
-    display: flex;
-}
 
 .mockup-card{
     width: auto;
@@ -159,7 +156,8 @@ header{
 .cta-card{
     background: #DFE0DF;
     display:flex;
-    width: 300px;
+    max-width: 300px;
+    max-height: 300px;
     position:relative;
     left: -6em;
     flex-direction: column;
@@ -167,6 +165,7 @@ header{
     padding: 1em;
     
 }
+
 
 .project-detail-container h2{
     color: #E28340;
@@ -188,9 +187,7 @@ header{
     font-family: 'Poppins' , sans-serif;
     font-weight: 400;
     line-height: 20px;
-    font-size: 13px;
-    max-width: 270px;
-    
+    font-size: 13px;  
 }
 
 .project-links-container{
@@ -217,6 +214,100 @@ header{
     position: relative;
     
 }
+
+@media screen and (max-width: 1080px){
+    .cta-card{
+        width: 250px;
+        height: 250px;
+    }
+    .project-detail-container h2{
+        font-size: 25px;
+    }
+    
+    .project-tools{
+        font-size: 10px;   
+    }
+    
+    .project-description{
+        font-size: 10px; 
+        line-height: 15px;
+    }
+    
+    .link-container p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 970px){
+    .project-detail-container h2{
+        font-size: 20px;
+    }
+    
+    .project-tools{
+        font-size: 14px;   
+    }
+    .project-description{
+        font-size: 16px; 
+        line-height: 11px;
+    }
+}
+
+@media screen and (max-width: 790px){
+
+    .title{
+        font-size: 35px;
+    }
+
+    .project-container{
+        flex-direction: column;
+        width: 370px;
+    }
+    
+    .project-images-container{
+        position: relative;
+        left: -10px;
+    }
+    .cta-card{
+        left: -3px;
+        top: -70px;
+        max-height: 175px;
+        box-shadow: 0 5px 5px rgba(0,0,0,.1);
+    }
+    .project-detail-container h2{
+        font-size: 20px;
+    }
+    .project-tools{
+        font-size: 9px;   
+    }
+    .project-description{
+        margin-top: 1em;
+        font-size: 11px; 
+        line-height: 13px;
+        overflow: hidden;
+    }
+
+    .project-links-container{
+        margin-top: .5em;
+    
+    }
+    .link-container p{
+        font-size: 8px;
+    }
+    
+    .link-container a img{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 1px;
+    }
+    
+    .vl{
+        border-left: 1px solid #2B2B2B;
+        height: 33px;
+        margin: 0 15px;
+    }
+
+}
+
 /* Tools */
 .tools-title-container{
     margin: 0 auto;
@@ -230,7 +321,6 @@ header{
 .tools-container{
     background: #E28340;
 }
-
 
 /* Footer */
 footer{
