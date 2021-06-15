@@ -32,7 +32,7 @@ const ToolIcons = [
         title: 'Django',
     }
 ]
-const Languages = () => {
+const Tools = () => {
     return (
         <section className='tools-container'>
             {ToolIcons.map((tool) => (
@@ -47,4 +47,4 @@ const Languages = () => {
     )
 }
 
-export default Languages
+export default Tools
