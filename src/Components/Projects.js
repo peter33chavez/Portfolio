@@ -33,7 +33,7 @@ const projects = [
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta porro saepe cum. Cumque sunt delectus odio dolorem blanditiis vitae consequuntur.',
         site: 'https://peter33chavez.github.io/search-project0/',
         code: 'https://github.com/peter33chavez/search-project0',
-        web: GoogleMock
+        mockup: GoogleMock
     },
 ]
 
@@ -51,8 +51,7 @@ const Projects = () => {
                     <div className="cta-details">
                         <div className="project-detail-container">
                             <h2 className="project-title">{project.title}</h2>
-                            <hr />
-                            <p className='tech-stacks'>{project.stacks}</p>
+                            <p className='project-tools'>{project.stacks}</p>
                             <p className='project-description'>{project.description}</p>
                         </div>
                         <div className="project-links-container">
