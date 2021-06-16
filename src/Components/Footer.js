@@ -2,17 +2,22 @@ import React from 'react'
 import ConnectForm from './ConnectForm.js';
 
 const Footer = () => {
+
+    const Connect = () => {
+        console.log('Clicked');
+        //when clicked show ConnectForm.js
+    }
     return (
         <footer>
              <ul className="nav-container">
                 <li className="nav-item">
-                    <a href="#projects" className="projects-link">Projects</a>
+                    <a href="#projects" className="link">Projects</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#about" className="about-link">About</a>
+                    <a href="#about" className="link">About</a>
                 </li>
                 <li className="nav-item">
-                    <a href={ConnectForm} className="connect-link">Connect</a>
+                    <p onClick={Connect} className="link">Connect</p>
                 </li>
             </ul>
         </footer>

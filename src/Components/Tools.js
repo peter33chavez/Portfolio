@@ -4,41 +4,60 @@ import ReactIcon from '../Images/Icon-react.svg'
 import JavaScriptIcon from '../Images/Icon-javascript.svg'
 import CIcon from '../Images/Icon-C.svg'
 import DjangoIcon from '../Images/Icon-django.svg'
+import { useState } from 'react'
 
-const ToolIcons = [
-    {
-        id: 1,
-        icon: PythonIcon,
-        title: 'Python',
-    },
-    {
-        id: 2,
-        icon: ReactIcon,
-        title: 'React',
-    },
-    {
-        id: 3,
-        icon: JavaScriptIcon,
-        title: 'JavaScript',
-    },
-    {
-        id: 4,
-        icon: CIcon,
-        title: 'C',
-    },
-    {
-        id: 5,
-        icon: DjangoIcon,
-        title: 'Django',
-    }
-]
-
-const cards = document.querySelectorAll('.tool-item')
 const Tools = () => {
+    const [ToolIcons, setToolIcons ]= useState([
+        {
+            id: 1,
+            icon: PythonIcon,
+            title: 'Python',
+            active: false,
+        },
+        {
+            id: 2,
+            icon: ReactIcon,
+            title: 'React',
+            active: false,
+        },
+        {
+            id: 3,
+            icon: JavaScriptIcon,
+            title: 'JavaScript',
+            active: false,
+        },
+        {
+            id: 4,
+            icon: CIcon,
+            title: 'C',
+            active: false,
+        },
+        {
+            id: 5,
+            icon: DjangoIcon,
+            title: 'Django',
+            active: false,
+        }
+    ])
+    const removeActiveClass = () => {
+        setToolIcons(ToolIcons.map((tool) => 
+            tool.active ? {...tool, active: !tool.active }: tool
+            )
+        )
+    }
+    const showCard = (id) => {
+        setToolIcons(ToolIcons.map((tool) => 
+            tool.id === id ? {...tool, active: !tool.active }: tool
+            )
+        )
+    }
     return (
         <section className='tools-container'>
             {ToolIcons.map((tool) => (
-                <div key={tool.id} className="tool-item">
+                <div key={tool.id} className= { `tool-item ${tool.active ? 'active' : ''}`} onClick={() => {
+                    removeActiveClass
+                    showCard(tool.id)}
+                }>
                     <div className="img-card">
                         <img src={tool.icon} alt="Python" />
                     </div>

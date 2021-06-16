@@ -4,18 +4,22 @@ import Twitter from '../Images/Icon-twitter.svg';
 import LinkedIn from '../Images/Icon-linkedin.svg';
 import ConnectForm from './ConnectForm.js';
 const NavBar = () => {
+    const Connect = () => {
+        console.log('Clicked');
+        //when clicked show ConnectForm.js
+    }
     return (
         <nav>
             <img src={Logo} width='120px' height='40px' alt="Name Logo" className="logo" />
             <ul className="nav-container">
                 <li className="nav-item">
-                    <a href="#projects" className="projects-link">Projects</a>
+                    <a href="#projects" className="link">Projects</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#about" className="about-link">About</a>
+                    <a href="#about" className="link">About</a>
                 </li>
-                <li className="nav-item">
-                    <a href={ConnectForm}className="connect-link">Connect</a>
+                <li className="nav-item" onClick={Connect}>
+                    <text className='link'>Connect</text>
                 </li>
             </ul>
             <ul className="social-container">
