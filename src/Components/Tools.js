@@ -5,6 +5,7 @@ import JavaScriptIcon from '../Images/Icon-javascript.svg'
 import CIcon from '../Images/Icon-C.svg'
 import DjangoIcon from '../Images/Icon-django.svg'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 const Tools = () => {
     const [ToolIcons, setToolIcons ]= useState([
@@ -49,14 +50,17 @@ const Tools = () => {
         <section className='tools'>
             <div className="tools-container">
                 {ToolIcons.map((tool) => (
-                    <div key={tool.id} className= { `tool-item ${tool.active ? 'active' : ''}`} onClick={() => 
+                    <motion.div
+                        whileHover={{ scale: 1.05 }}    
+                    
+                    key={tool.id} className= { `tool-item ${tool.active ? 'active' : ''}`} onClick={() => 
                         showCard(tool.id)
                     }>
                         <div className="img-card">
                             <img src={tool.icon} alt="Python" />
                         </div>
                         <h4>{tool.title}</h4>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </section>

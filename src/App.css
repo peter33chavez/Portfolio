@@ -261,6 +261,7 @@ header{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 20px 0;
 }
 
 .tool-item{

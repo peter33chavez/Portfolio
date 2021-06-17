@@ -38,6 +38,8 @@ const projects = [
 ]
 
 const Projects = () => {
+
+
     return (
         <section className='projects'>
             {projects.map((project) => (
