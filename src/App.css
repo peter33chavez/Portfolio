@@ -59,8 +59,9 @@ nav{
 }
 .social-link a img{
     padding: .3em;
-    width: 25px;
+    width: 30px;
 }
+
 
 /* Header */
 
@@ -264,7 +265,7 @@ header{
 
 .tool-item{
     height: 300px;
-    width: 5%;
+    width:5%;
     margin:0 5px;
     cursor: pointer;
     display: flex;
@@ -273,7 +274,12 @@ header{
     justify-content: center;
     background: #DFE0DF;
     border-radius: 50px;
-    transition: width 0.5s ease-in;
+    transition: width 0.2s ease-in;
+}
+
+.tools-container :hover{
+    box-shadow: 0 0 0 2px #DFE0DF;
+
 }
 
 .tool-item img{
@@ -290,6 +296,7 @@ header{
 
 .tool-item.active{
     width: 20%;
+    box-shadow: none;
 }
 .tool-item.active h4{
     opacity: 1;
@@ -388,8 +395,8 @@ footer{
     }
     
     .quote-container{
-        width: 90vw;
-        margin: 0 20px;
+        width: 70vw;
+        margin: 0 80px;
     }
     
     /* projects */
@@ -457,6 +464,10 @@ footer{
     /* header */
     header{
         background-position: -500px 0;
+    }
+    .quote-container{
+        width: 80vw;
+        margin: 0 40px;
     }
 
     /* tools */
