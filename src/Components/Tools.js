@@ -39,12 +39,6 @@ const Tools = () => {
             active: false,
         }
     ])
-    const removeActiveClass = () => {
-        setToolIcons(ToolIcons.map((tool) => 
-            tool.active ? {...tool, active: !tool.active }: tool
-            )
-        )
-    }
     const showCard = (id) => {
         setToolIcons(ToolIcons.map((tool) => 
             tool.id === id ? {...tool, active: !tool.active }: tool
@@ -52,18 +46,19 @@ const Tools = () => {
         )
     }
     return (
-        <section className='tools-container'>
-            {ToolIcons.map((tool) => (
-                <div key={tool.id} className= { `tool-item ${tool.active ? 'active' : ''}`} onClick={() => {
-                    removeActiveClass
-                    showCard(tool.id)}
-                }>
-                    <div className="img-card">
-                        <img src={tool.icon} alt="Python" />
+        <section className='tools'>
+            <div className="tools-container">
+                {ToolIcons.map((tool) => (
+                    <div key={tool.id} className= { `tool-item ${tool.active ? 'active' : ''}`} onClick={() => 
+                        showCard(tool.id)
+                    }>
+                        <div className="img-card">
+                            <img src={tool.icon} alt="Python" />
+                        </div>
+                        <h4>{tool.title}</h4>
                     </div>
-                    <h4>{tool.title}</h4>
-                </div>
-            ))}
+                ))}
+            </div>
         </section>
     )
 }
