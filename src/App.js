@@ -24,7 +24,7 @@ function App() {
         <Tools />
         <Footer showForm={() => setConnect(true)}/>
       </main>
-      <ConnectForm trigger={Connect}/>
+      <ConnectForm trigger={Connect} closeBtn={setConnect}/>
     </div>
   );
 }

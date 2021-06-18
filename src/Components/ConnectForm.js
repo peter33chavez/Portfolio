@@ -2,7 +2,7 @@ import React from 'react'
 import './ConnectForm.css'
 import CloseIcon from '../Images/Icon-close.svg'
 
-const ConnectForm = ({ trigger }) => {
+const ConnectForm = ({ trigger, closeBtn }) => {
     return (trigger) ?(
         <div className="popup-background">
             <div className='connect-form-container'>
@@ -18,7 +18,7 @@ const ConnectForm = ({ trigger }) => {
 
                     <button type='submit' className='form-btn'>Send</button>
                 </form>
-                <button><img src={CloseIcon} className="close-btn"/></button>
+                <button className="close-btn" onClick={() => closeBtn(false)}><img src={CloseIcon}/></button>
             </div>
         </div>
     ) : '';
