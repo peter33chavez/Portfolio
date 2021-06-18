@@ -3,11 +3,8 @@ import GitHub from '../Images/Icon-github.svg';
 import Twitter from '../Images/Icon-twitter.svg';
 import LinkedIn from '../Images/Icon-linkedin.svg';
 import ConnectForm from './ConnectForm.js';
-const NavBar = () => {
-    const Connect = () => {
-        console.log('Clicked');
-        //when clicked show ConnectForm.js
-    }
+const NavBar = ({ showForm }) => {
+    
     return (
         <nav>
             <div className="nav-container">
@@ -16,13 +13,13 @@ const NavBar = () => {
                 </div>
                 <ul className="nav-item-container">
                     <li className="nav-item">
-                        <a href="#projects" className="link">Projects</a>
+                        <a href="#Projects" className="link">Projects</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#about" className="link">About</a>
+                        <a href="#About" className="link">About</a>
                     </li>
-                    <li className="nav-item" onClick={Connect}>
-                        <text className='link'>Connect</text>
+                    <li className="nav-item" >
+                        <a href='#' onClick={showForm} className='link'>Connect</a>
                     </li>
                 </ul>
                 <ul className="social-container">

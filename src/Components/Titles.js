@@ -27,7 +27,7 @@ const Titles = ({ container, title }) => {
 
 
     return (
-        <div ref={ref} className={container}>
+        <div ref={ref} id={title} className={container}>
             <motion.h2 animate={titleAnimation} className="title">{title}</motion.h2>
         </div>
     )
