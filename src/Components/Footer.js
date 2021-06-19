@@ -1,11 +1,6 @@
 import React from 'react'
 
-const Footer = (showForm) => {
-
-    const Connect = () => {
-        console.log('Clicked');
-        //when clicked show ConnectForm.js
-    }
+const Footer = ({showForm}) => {
     return (
         <footer>
              <ul className="nav-container">
@@ -16,7 +11,7 @@ const Footer = (showForm) => {
                     <a href="#about" className="link">About</a>
                 </li>
                 <li className="nav-item">
-                    <a href='#' onClick={showForm} className='link'>Connect</a>
+                    <button onClick={showForm} className='connect-btn'>Connect</button>
                 </li>
             </ul>
         </footer>

@@ -11,6 +11,7 @@ import { useState } from 'react'
 
 function App() {
 
+  //state for ConnectForm toggler
   const [Connect, setConnect] = useState(false);
 
   return (

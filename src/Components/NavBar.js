@@ -2,7 +2,6 @@ import Logo from '../Images/Name-text.png';
 import GitHub from '../Images/Icon-github.svg';
 import Twitter from '../Images/Icon-twitter.svg';
 import LinkedIn from '../Images/Icon-linkedin.svg';
-import ConnectForm from './ConnectForm.js';
 const NavBar = ({ showForm }) => {
     
     return (
@@ -19,7 +18,7 @@ const NavBar = ({ showForm }) => {
                         <a href="#About" className="link">About</a>
                     </li>
                     <li className="nav-item" >
-                        <a href='#' onClick={showForm} className='link'>Connect</a>
+                        <button onClick={showForm} className='connect-btn'>Connect</button>
                     </li>
                 </ul>
                 <ul className="social-container">

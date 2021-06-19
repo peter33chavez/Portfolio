@@ -1,10 +1,13 @@
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
 .popup-background{
     position: fixed;
     top: 0;
     left: 0; 
     width: 100%;
     height: 100vh;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,10 +18,26 @@
     padding: 32px;
     width: 100%;
     max-width: 400px;
+    min-height: 500px;
     background: #DFE0DF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+.connect-form-container h1{
+    align-self: center;
+    color: #E28340;
+}
+.connect-form-container hr{
+    border: 1px solid #E28340;
+    min-width: 110px;
+    margin: 2px auto 10px auto;
 }
 .close-btn img{
-    width: 100%;
+    width: 15px;
 }
 .close-btn{
     position:absolute;
@@ -28,4 +47,52 @@
     border: none;
     background: #DFE0DF;
 }
+.connect-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;   
+}
+.form-label{
+    margin-bottom: 5px;
+    color: #2B2B2B;
+}
+
+.form-input{
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.textarea{
+    height: 200px;
+}
+
+.form-btn{
+    background: #E28340;
+    color: #DFE0DF;
+    border: none;
+    padding: 1em;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.direct-contact{
+    color: #E28340;
+    font-size: 16px;
+}
+
+.contact-item{
+    font-size: 14px;
+    color: #2B2B2B;
+}
+
+
 

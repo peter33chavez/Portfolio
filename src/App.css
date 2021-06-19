@@ -37,13 +37,18 @@ nav{
 
 .nav-item {
     padding: 2em;
-    display: pointer;
     font-size: 14px;
     color: #DFE0DF;
 }
 
 .item{
     cursor: pointer;
+}
+.connect-btn{
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #DFE0DF;
 }
 .nav-item :visited{
     color:#DFE0DF;

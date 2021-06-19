@@ -4,10 +4,11 @@ import { motion, useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
 
 const Titles = ({ container, title }) => {
+
+    //wait till section of page is visible to run animation
     const {ref, inView} = useInView({
         threshold: 1
-    }
-    );
+    });
     const titleAnimation = useAnimation();
     
       useEffect(() => {

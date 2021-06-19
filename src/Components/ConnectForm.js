@@ -35,17 +35,26 @@ const ConnectForm = ({ trigger, closeBtn }) => {
         <div className="popup-background">
             <div className='connect-form-container'>
                 <form className='connect-form' onSubmit={handleSubmit}>
-                    <label className='form-label'>Name</label>
-                    <input type="text"  className='form-input' value={name} onChange={(e) => setName(e.target.value)}/>
-
-                    <label className='form-label'>Email</label>
-                    <input type="email"  className='form-input' value={email} onChange={(e) => setEmail(e.target.value)}/>
-
-                    <label className='form-label'>Message</label>
-                    <textarea type="textarea" className='form-input' value={message} onChange={(e) => setMessage(e.target.value)}/>
-
+                    <h1>Connect</h1>
+                    <hr />
+                    <div className="name-input form-item">
+                        <label className='form-label'>Name</label>
+                        <input type="text"  className='form-input' value={name} onChange={(e) => setName(e.target.value)}/>
+                    </div>
+                    <div className="email-input form-item">
+                        <label className='form-label'>Email</label>
+                        <input type="email"  className='form-input' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    </div>
+                    <div className="message-input form-item">
+                        <label className='form-label'>Message</label>
+                        <textarea type="textarea" className='form-input textarea' value={message} onChange={(e) => setMessage(e.target.value)}/>
+                    </div>
                     <button type='submit' className='form-btn'>Send</button>
                 </form>
+                <h2 className='direct-contact'>Direct Contact</h2>
+                <hr/>
+                <p className='contact-item'>Email: Peter33chavez@gmail.com</p>
+                <p className='contact-item'>Number: (408)960-5790</p>
                 <button className="close-btn" onClick={() => closeBtn(false)}><img src={CloseIcon} alt='close button'/></button>
             </div>
         </div>
