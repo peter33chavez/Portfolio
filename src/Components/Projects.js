@@ -10,8 +10,8 @@ const projects = [
     {
         id: 1,
         title: 'Auction Commerce',
-        stacks: 'Django, SQLite, HTML, CSS',
-        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta porro saepe cum. Cumque sunt delectus odio dolorem blanditiis vitae consequuntur.',
+        tools: 'Django, SQLite, HTML, CSS',
+        description: 'E-Commerce auction website that utilizes creation of listings, making bid offers, leaving comments, saving to watch list, and searching via category. Login/Register with server/client side validation is also available. ',
         site: 'Null',
         code: 'https://github.com/peter33chavez/commerce-Project2',
         mockup: BidMock
@@ -20,7 +20,7 @@ const projects = [
     {
         id: 2,
         title: 'JavaScript Email',
-        stacks: 'JavaScript, Django, SQLite, HTML, CSS',
+        tools: 'JavaScript, Django, SQLite, HTML, CSS',
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta porro saepe cum. Cumque sunt delectus odio dolorem blanditiis vitae consequuntur.',
         site: 'Null',
         code: 'https://github.com/peter33chavez/mail-project3',
@@ -29,7 +29,7 @@ const projects = [
     {
         id: 3,
         title: 'Google Search',
-        stacks: 'HTML, Sass, CSS,',
+        tools: 'HTML, Sass, CSS,',
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta porro saepe cum. Cumque sunt delectus odio dolorem blanditiis vitae consequuntur.',
         site: 'https://peter33chavez.github.io/search-project0/',
         code: 'https://github.com/peter33chavez/search-project0',
@@ -53,7 +53,7 @@ const Projects = () => {
                     <div className="cta-details">
                         <div className="project-detail-container">
                             <h2 className="project-title">{project.title}</h2>
-                            <p className='project-tools'>{project.stacks}</p>
+                            <p className='project-tools'>{project.tools}</p>
                             <p className='project-description'>{project.description}</p>
                         </div>
                         <div className="project-links-container">
