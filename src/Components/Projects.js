@@ -12,7 +12,7 @@ const projects = [
         title: 'Auction Commerce',
         tools: 'Django, SQLite, HTML, CSS',
         description: 'E-Commerce auction website that utilizes creation of listings, making bid offers, leaving comments, saving to watch list, and searching via category. Login/Register with server/client side validation is also available. ',
-        site: 'Null',
+        site: 'http://devpeter.pythonanywhere.com',
         code: 'https://github.com/peter33chavez/commerce-Project2',
         mockup: BidMock
 
@@ -58,7 +58,7 @@ const Projects = () => {
                         </div>
                         <div className="project-links-container">
                             <div className="link-container">
-                                <a href="#"><img src={ComputerIcon} alt="Project Website" />
+                                <a href={project.site}><img src={ComputerIcon} alt="Project Website" />
                                 <p>Site</p>
                                 </a>
                             </div>
