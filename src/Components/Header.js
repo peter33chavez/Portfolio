@@ -24,7 +24,7 @@ const Header = () => {
                     initial='hidden'
                     animate='visible'
                     transition={{ duration: 2}}
-                className='about-summary'>Hello, I’m Peter! A Data Driven Developer who brings a Business perspective to the Community, with my Companies best interests in mind. </motion.p>
+                className='about-summary'>I’m a innovative professional who bringing a strategic business perspective to the forefront, which allows me to maximize efficient and effective outcomes. </motion.p>
                 <motion.button
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
