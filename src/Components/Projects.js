@@ -22,7 +22,7 @@ const projects = [
         title: 'JavaScript Email',
         tools: 'JavaScript, Django, SQLite, HTML, CSS',
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta porro saepe cum. Cumque sunt delectus odio dolorem blanditiis vitae consequuntur.',
-        site: 'Null',
+        site: 'http://jsemail.pythonanywhere.com/login',
         code: 'https://github.com/peter33chavez/mail-project3',
         mockup: EmailMock
     },
