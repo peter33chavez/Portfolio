@@ -523,8 +523,9 @@ footer{
     .cta-card{
         left: -3px;
         top: -70px;
-        max-height: 175px;
+        max-height: 185px;
         box-shadow: 0 5px 5px rgba(0,0,0,.1);
+        
     }
     .project-detail-container h2{
         font-size: 18px;

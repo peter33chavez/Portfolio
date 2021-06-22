@@ -11,6 +11,7 @@ I utilize ```useState``` within the project to handle dynamically populating of 
 - Framer Motion
 - AdobeXD
 - Adobe Illustrator 
+- Photoshop 
 
 ## LAUNCH
 
