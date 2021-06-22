@@ -1,9 +1,9 @@
 
 # Personal Portfolio
-    This project displays my projects as well as gives you a little background on who I am, and what to expect from me. 
-    Design for project was done in AdobeXD/Illustrator
-    I am using React for the main structure of this project with Firebase to handle the contact form data. 
-    I utilize ```useState``` within the project to handle dynamically populating of my projects, as well as ```useEffect``` for the Framer Motion animations. ```Props``` were also used for the titles and onClick property for the contact form.
+My Portfolio displays some projects as well as gives you a little background on who I am, and what to expect from me. 
+Design for project was done in AdobeXD/Illustrator
+I am using React for the main structure of this project with Firebase to handle the contact form data. 
+I utilize ```useState``` within the project to handle dynamically populating of my projects, as well as ```useEffect``` for the Framer Motion animations. ```Props``` were also used for the titles and onClick property for the contact form.
 ## TOOLS: 
 - React
 - JavaScript
