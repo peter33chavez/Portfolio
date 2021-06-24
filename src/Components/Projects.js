@@ -30,7 +30,7 @@ const projects = [
         id: 3,
         title: 'Google Search',
         tools: 'HTML, Sass, CSS,',
-        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta porro saepe cum. Cumque sunt delectus odio dolorem blanditiis vitae consequuntur.',
+        description: 'Design study with a Google clone that supports the standard search engine, advanced search, and image search.',
         site: 'https://peter33chavez.github.io/search-project0/',
         code: 'https://github.com/peter33chavez/search-project0',
         mockup: GoogleMock
