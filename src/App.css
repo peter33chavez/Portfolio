@@ -86,11 +86,12 @@ header{
 
 .quote-container{
     width: 40vw;
+    height: 60vh;
     margin: 0 160px;
 }
 
 .quote{
-    font-weight: 300;
+    font-weight: 400;
     font-size: 50px;
     width: 260px;
 }
@@ -181,8 +182,8 @@ header{
 .cta-card{
     background: #DFE0DF;
     display:flex;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 320px;
+    max-height: 320px;
     position:relative;
     left: -6em;
     flex-direction: column;
@@ -403,10 +404,7 @@ footer{
         background-position: bottom;
     }
     /* projects */
-    .cta-card{
-        width: 250px;
-        height: 250px;
-    }
+    
     .project-detail-container h2{
         font-size: 25px;
     }
@@ -471,6 +469,14 @@ footer{
         font-size: 10px;
         line-height: 11px;
     }
+    .cta-card{
+        height: 210px;
+        max-width: 280px;
+    }
+    .cta-details{
+        height: auto;
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 790px){
@@ -523,7 +529,8 @@ footer{
     .cta-card{
         left: -3px;
         top: -70px;
-        max-height: 185px;
+        max-height: 230px;
+        max-width: 250px;
         box-shadow: 0 5px 5px rgba(0,0,0,.1);
         
     }

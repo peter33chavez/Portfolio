@@ -21,7 +21,7 @@ const projects = [
         id: 2,
         title: 'JavaScript Email',
         tools: 'JavaScript, Django, SQLite, HTML, CSS',
-        description: 'Email Dashboard using Javascript handling for the Inbox, Compose, Sent, and Archived tabs within the logged-in view. Django is used to handle Customer login validation.',
+        description: 'Email Dashboard uses Javascript handling for all routing through Inbox, Compose, Sent, and Archived tabs within the logged-in view. Django is used to handle Customer login validation and API calls.',
         site: 'http://jsemail.pythonanywhere.com/login',
         code: 'https://github.com/peter33chavez/mail-project3',
         mockup: EmailMock

@@ -33,7 +33,7 @@ const NavBar = ({ showForm }) => {
                         </a>
                     </li>
                     <li className="social-link">
-                        <a href="https://www.linkedin.com/in/peter-chavez-375874199/" className="linkedIn-link">
+                        <a href="https://www.linkedin.com/in/dev-peter/" className="linkedIn-link">
                             <img src={LinkedIn} alt="LinkedIn" />
                         </a>
                     </li>

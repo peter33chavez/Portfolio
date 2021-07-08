@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import resume from '../Docs/Resume.pdf'
 
 
 const Header = () => {
@@ -25,11 +26,12 @@ const Header = () => {
                     animate='visible'
                     transition={{ duration: 2}}
                 className='about-summary'>I’m an innovative professional who bringing a strategic business perspective to the forefront, which allows me to maximize efficient and effective outcomes. </motion.p>
-                <motion.button
+                <motion.a
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{duration: 3}}
-                 className="resume-btn">Download Resume</motion.button>
+                 className="resume-btn" href={ resume }
+                 download='Peter-Chavez-Resume'>Download Resume</motion.a>
             </div>
         </header>
     )
