@@ -13,8 +13,11 @@ a:link, a:visited{
 }
 body{
     background: #DFE0DF;
-
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 /* NavBar */
 
 nav{
@@ -98,7 +101,7 @@ header{
 .about-summary{
     font-family: 'Poppins' , sans-serif;
     font-weight: 600;
-    margin-top: 1em;
+    margin: 1em 0;
     font-weight: 100;
 }
 
@@ -106,9 +109,9 @@ header{
     background: #2B2B2B;
     color: #DFE0DF;
     margin-top: 2em;
-    padding: 5px 20px;
+    padding: 10px 40px;
     border: 0;
-    border-radius: 13px;
+    border-radius: 30px;
     font-family: 'Poppins' , sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -143,6 +146,35 @@ header{
     font-size: 50px;
 }
 
+.tab-btn-container{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.tab-btn{
+    background: #2B2B2B;
+    color: #DFE0DF;
+    margin-top: 2em;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 30px;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.tab-btn.active{
+    color: #2B2B2B;
+    background: #DFE0DF;
+    border: 1px solid #2B2B2B;
+    scale: 105%;
+    transition: ease-out 0.2s;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 5px 15px -3px rgba(0,0,0,0.1);
+}
+
 .projects{
     background: #DFE0DF;
     min-height: 100vh;
@@ -162,6 +194,7 @@ header{
 .project-container{
    width:80%;
    max-width: 2000px;
+   max-height: 800px;
    margin: 0 auto;
    display: flex;
    align-items: center;
@@ -172,10 +205,22 @@ header{
 
 .mockup-card{
     width: auto;
+    max-height: 700px;
+    max-width: 1000px;
+    overflow: hidden;
 }
 
 .mockup-card img{
     width:100%;
+    height: 100%;
+}
+
+.video-card.mobile video{
+    height: 100%;
+}
+.video-card{
+    height: 600px;
+    max-width: 1000px
 }
 
 .cta-card{
@@ -191,6 +236,18 @@ header{
     box-shadow: 0 0 20px 10px rgba(0,0,0,.1);
 
 }
+.project-description::-webkit-scrollbar {
+    display: none;
+  }
+
+.cta-card.animation{
+    width: 400px;
+}
+
+.cta-card.mobile{
+    max-width: 400px;
+}
+
 
 
 .project-detail-container h2{
@@ -472,6 +529,10 @@ footer{
     .cta-card{
         height: 210px;
         max-width: 280px;
+    }
+    .cta-card.animation{
+        width: 480px;
+        height: auto;
     }
     .cta-details{
         height: auto;

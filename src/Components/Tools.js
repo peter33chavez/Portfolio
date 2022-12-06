@@ -11,34 +11,34 @@ const Tools = () => {
     const [ToolIcons, setToolIcons ]= useState([
         {
             id: 1,
-            icon: PythonIcon,
-            title: 'Python',
-            active: false,
-        },
-        {
-            id: 2,
             icon: ReactIcon,
             title: 'React',
             active: false,
         },
         {
-            id: 3,
+            id: 2,
             icon: JavaScriptIcon,
             title: 'JavaScript',
             active: false,
         },
         {
+            id: 3,
+            icon: PythonIcon,
+            title: 'Python',
+            active: false,
+        },
+        {
             id: 4,
-            icon: CIcon,
-            title: 'C',
+            icon: DjangoIcon,
+            title: 'Django',
             active: false,
         },
         {
             id: 5,
-            icon: DjangoIcon,
-            title: 'Django',
+            icon: CIcon,
+            title: 'C',
             active: false,
-        }
+        },
     ])
     const showCard = (id) => {
         setToolIcons(ToolIcons.map((tool) => 

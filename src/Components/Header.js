@@ -17,15 +17,14 @@ const Header = () => {
                     animate='visible'
                     transition={{ duration: 1}}
                 
-                className="quote">Sales Manager 
-                Turned 
+                className="quote">UI/UX
                 Developer</motion.h1>
                 <motion.p
                     variants={fadeLeft}
                     initial='hidden'
                     animate='visible'
                     transition={{ duration: 2}}
-                className='about-summary'>I’m an innovative professional who bringing a strategic business perspective to the forefront, which allows me to maximize efficient and effective outcomes. </motion.p>
+                className='about-summary'>I’m an innovative professional who brings a dynamic  perspective to the forefront. This allows me to produce unique yet efficient outcomes. </motion.p>
                 <motion.a
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
